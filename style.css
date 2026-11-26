@@ -1,0 +1,182 @@
+:root {
+  --um: #4208a8;
+  --gray: #cccccc;
+  --ink: #111111;
+  --paper: #ffffff;
+  --pause: #f3f3f3;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #e8e8e8;
+  color: var(--ink);
+  font-family: Arial, "Arial Black", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+a { color: var(--um); }
+
+.sheet {
+  max-width: 980px;
+  margin: 24px auto 48px;
+  background: var(--paper);
+}
+
+.brandbar {
+  background: #111111;
+  padding: 22px 40px;
+}
+
+.brandbar img {
+  display: block;
+  width: 250px;
+  height: auto;
+}
+
+.hero {
+  background: var(--um);
+  color: #ffffff;
+  padding: 32px 40px 28px;
+}
+
+.motto {
+  margin: 0;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.15;
+}
+
+.kicker {
+  margin: 10px 0 0;
+  font-size: 16px;
+}
+
+main { padding: 8px 40px 36px; }
+
+h1 {
+  margin: 28px 0 12px;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+h2 {
+  margin: 32px 0 12px;
+  color: var(--um);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.lead { font-size: 20px; margin: 0 0 12px; }
+
+.lessons {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.lesson {
+  flex: 1;
+  border: 1px solid var(--gray);
+  padding: 8px 20px 20px;
+}
+
+.lesson h2 { margin-top: 16px; }
+
+.say {
+  margin: 12px 0;
+  padding: 12px 14px;
+  background: #f6f6f6;
+  border-left: 4px solid var(--um);
+}
+
+ol { margin: 8px 0 0; padding-left: 22px; }
+li { margin: 8px 0; }
+
+.back { margin-top: 28px; }
+
+.legend {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 8px 0 20px;
+  font-size: 15px;
+}
+
+.swatch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  vertical-align: -2px;
+}
+
+.swatch.on { background: var(--um); }
+.swatch.pause { background: var(--gray); }
+.swatch.rest { background: #ffffff; border: 1px solid var(--gray); }
+
+.month { margin: 8px 0 28px; }
+
+.cal-wrap { overflow-x: auto; }
+
+.cal {
+  width: 100%;
+  min-width: 840px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.cal th {
+  text-align: left;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 6px 6px 8px;
+  border-bottom: 3px solid var(--um);
+}
+
+.cal td {
+  height: 118px;
+  vertical-align: top;
+  border: 1px solid var(--gray);
+  padding: 8px;
+  background: #ffffff;
+}
+
+.cal td.empty { background: #fafafa; border-color: #e4e4e4; }
+
+.cal td.pause { background: var(--pause); }
+
+.cal td.on { background: var(--um); }
+.cal td.on a { color: #ffffff; text-decoration: none; display: block; height: 100%; }
+.cal td.on a:hover { text-decoration: underline; }
+
+.num { display: block; font-weight: 800; font-size: 16px; }
+.on .num { color: #ffffff; }
+.pause .num { color: #111111; }
+
+.who { display: block; margin-top: 6px; font-weight: 800; font-size: 14px; line-height: 1.25; }
+.cat { display: block; margin-top: 4px; font-size: 13px; line-height: 1.3; }
+.tag { display: block; margin-top: 6px; font-size: 12px; font-weight: 800; letter-spacing: 0.02em; }
+
+.people { width: 100%; border-collapse: collapse; }
+.people th, .people td {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--gray);
+  vertical-align: top;
+}
+.people a { font-weight: 800; }
+
+footer.foot {
+  padding: 0 40px 28px;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .brandbar, .hero, main, footer.foot { padding-left: 20px; padding-right: 20px; }
+  .lessons { flex-direction: column; }
+  h1, .motto { font-size: 26px; }
+}
