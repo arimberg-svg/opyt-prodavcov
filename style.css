@@ -26,8 +26,8 @@ a { color: var(--um); }
 }
 
 .brandbar {
-  background: #111111;
-  padding: 22px 40px;
+  background: #ffffff;
+  padding: 22px 40px 18px;
 }
 
 .brandbar img {
@@ -85,6 +85,14 @@ h2 {
 }
 
 .lesson h2 { margin-top: 16px; }
+
+.block { margin-top: 16px; }
+
+.block h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  color: var(--ink);
+}
 
 .say {
   margin: 12px 0;
